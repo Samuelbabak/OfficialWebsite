@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel's Portfolio</title>
+    <link rel="icon" type="image/jpg" href="images/SamuelHeadShot.jpg">
+    <script src="https://kit.fontawesome.com/58a4ae1c57.js" crossorigin="anonymous"></script>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+    div{
+        margin: 0px;
+        padding: 0px;
+    }
+    .mainBody{
+        background-color: #121212;
+        margin: 0px;
+        padding: 0px;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+
+    }
+    ul{
+        
+        display: inline-block;
+        width: 90%;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+    }
+    li{
+        float: left;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0px;
+        background-color: #121212;
+        transition: 0.2s;
+    }
+    li:hover{
+        transition: 0.2s;
+        background-color: #503e79;
+    }
+    li:active{
+        transition: 0.1s;
+        background-color: #4b3d6b;
+    }
+    a{
+        font-family: "Open Sans";
+        padding: 0;
+        margin: 0;
+        padding-right: 8px;
+        padding-left: 8px;
+        display: inline;
+        text-decoration: none;
+        color:white;
+    }
+    a:visited{
+        text-decoration: none;
+        color: lightgray;
+    }
+    .settingsCog{
+        font-size: 20px; 
+        color:white; 
+        float: right;
+        padding-left: 5px; 
+        padding-right: 5px;
+        margin-left: 20px;
+        transition: 0.2s;
+    }
+    .settingsCog:hover{
+        background-color: #121212;
+    }
+    .fa-cog:hover{
+        transition: 1s;
+        rotate: 45deg;
+    }
+    .fa-cog{
+        transition: 0.4s;
+        rotate: -45deg;
+    }
+
+    .settingsDropDown{
+
+    }
+
+
+    #introHeaderWrapper{
+        margin-bottom: 50px;
+    }
+    #introHeader{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(45, 41, 41);
+        color: white;
+        font-family: "Open Sans";
+        font-weight: 400;
+    }
+    .headshotDiv{
+        width: 200px;
+        margin: 0;
+        padding-left: 5%;
+    }
+    .headshot{
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+        margin-top:20px;
+        margin-bottom: -50px;
+        
+    }
+    .introHeaderText{
+        flex: 1;
+        text-align: center;
+    }
+    .introHeaderP{
+        color:rgb(174, 168, 168);
+    }
+    .HomePageContainer{
+
+    }
+
+
+
+
+
+
+
+    #aboutMeContainer {
+        padding-top: 20px;
+        font-family: "Open Sans";
+        color: rgb(116, 94, 94);
+    }
+    #aboutMeContainer h1{
+        margin-left: 18%;
+    }
+    .aboutMe{
+        background-color: rgb(72, 38, 38);
+        width: 85%;
+    }
+
+</style>
+
+
+
+<body class="mainBody">
+    <div id="navbar">
+
+                <ul>
+                    <li><a href="#test">About Me</a></li>
+                    <li><a href="#test1">Personal Projects</a></li>
+                    <li><a href="#test1">Contact</a></li>
+                    <li class="settingsCog"><i class="fa fa-cog" aria-hidden="true"></i></li>
+                    <li style="float: right"><a href="#test1">Website Version history</a></li>
+                </ul>
+
+    </div>
+
+    <div id="introHeaderWrapper">
+        <div id="introHeader">
+            <div class="headshotDiv">
+                <img class="headshot" src="images/SamuelHeadShot.jpg">
+            </div>
+            <div class="introHeaderText">        
+                <h1>Samuel Babak's Portfolio</h1>
+                <p class="headerP">Website Version 0.1</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutMeContainer">
+
+        <div id= "aboutMe" >
+            <h1>About Me</h1>
+            <p>test</p>
+
+        </div>
+        <div id="test1" style="
+            width: 100%;
+            height: 900px
+            ">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div style="
+
+            width: 100%;
+            height: 900px
+            ">
+
+            <div class="settingsDropDown">
+                <i class="fa-solid fa-user"></i>
+                <ul>
+                    <li class="settingListItem"></li>
+                    <li class="settingListItem"></li>
+                    <li class="settingListItem"></li>
+                    
+                    <li class="settingListItem">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+
+
+</html>
+
+
