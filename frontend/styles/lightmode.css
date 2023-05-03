@@ -1,0 +1,42 @@
+.mainBody{
+    background-color: rgb(87, 86, 109);
+}
+
+li{
+    background-color: rgb(87, 86, 109);
+}
+li:hover{
+    background-color: #514b5f;
+}
+li:active{
+    background-color: #4b3d6b;
+}
+a{
+    color:rgb(205, 196, 196);
+}
+a:visited{
+    text-decoration: none;
+    color: rgb(205, 196, 196);
+}
+.settingsCog{
+    color:rgb(0, 0, 0); 
+}
+
+
+#introHeader{
+    background-color: rgb(87, 73, 130);
+    color: rgb(226, 202, 202);
+}
+.introHeaderP{
+    color:rgb(174, 168, 168);
+}
+.HomePageContainer{
+
+}
+#aboutMeContainer {
+    color: rgb(116, 94, 94);
+}
+.aboutMe{
+    background-color: rgb(174, 41, 41);
+    width: 85%;
+}

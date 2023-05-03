@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm</title>
+
+    <script src="Javascript.js"></Script>
+    <script src="https://kit.fontawesome.com/58a4ae1c57.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../styles/darkmode.css">
+    <link rel="stylesheet" type="text/css" href="../styles/vizualizer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body id="mainBody">
+    <div id="navbar">
+
+        <ul id>
+            <li><a href="../Index.html#aboutMe">About Me</a></li>
+            <li><a href="../Index.html#PersonalProjects">Personal Projects</a></li>
+            <li><a href="../Index.html#contact">Contact</a></li>
+            <li class="settingsCog"><i class="fa fa-cog" aria-hidden="true"></i></li>
+            <li style="float: right"><a href="#test1">Website Version history</a></li>
+        </ul>
+
+    </div>
+
+    <div id="introHeaderWrapper">
+        <div id="introHeader">
+            <div class="introHeaderText">        
+                <h1>Sorting Algorithm Vizualizer</h1>
+            </div>
+        </div>
+    </div>
+    <div id="mainBody">
+        <div id="Vizualizer">
+            <div style="margin-left: 5%;">
+                <button onclick="randomize()" id="randomizeButton"> Randomize </button>
+                <button onclick="sort()" id="sortButton"> Sort </button>
+
+                <select id="selectAlgorithm">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="random">Surprise Me</option>
+                </select>
+                <input id="dataCount" value="40" placeholder="Data count" >
+                <div class="slider-container">
+                    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <p id="errorMessage"></p>
+            </div>
+        </div>
+        <div id="dataContainerWrapper">
+            <div id="dataContainer" class="dataContainer"></div>
+
+        </div>
+        <div id="aboutProject">
+            <div style="display:flex;">
+                <div><h2 style="margin-left:-15px;">About This Project</h2></div>
+                <div><h4>docs</h4></div>
+            </div>
+            <h3>About</h3>
+            <p>I made this project to test my new knowledge of sorting algorithms after the last week of my CSC216 class. I decided to only integrate the most basic algorithms because it is very tedious creating the visual effects. I also wanted to increase my knowledge on using Javascript on my website, this is my first HTML project where I implement the use of Javascript.</p>
+            <h3>What I learned</h3>
+            <p>Through this project I learned a lot more about communicating with an HTML page through a JavaScript file. I also learned about how to use a DOM (Document Object Model). I also learned about how to work with these algorithms and how they work.</p>
+            <h3>Code</h3>
+        </div>
+        <div class="code" style="margin-left: 5%;background-color:darkGrey;height:400px;width:575px"></div>
+    </div>
+
+</body>
+</html>

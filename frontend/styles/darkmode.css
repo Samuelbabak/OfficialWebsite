@@ -1,0 +1,152 @@
+div{
+    margin: 0px;
+    padding: 0px;
+}
+#mainBody{
+    background-color: #121212;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+
+}
+#navbar ul{
+    
+    display: inline-block;
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+#navbar li{
+    float: left;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    background-color: #121212;
+    transition: 0.2s;
+}
+#navbar li:hover{
+    transition: 0.2s;
+    background-color: #503e79;
+}
+#navbar li:active{
+    transition: 0.1s;
+    background-color: #4b3d6b;
+}
+a{
+    font-family: "Open Sans";
+    padding: 0;
+    margin: 0;
+    padding-right: 8px;
+    padding-left: 8px;
+    display: inline;
+    text-decoration: none;
+    color:white;
+}
+#navbar a:visited{
+    text-decoration: none;
+    color: lightgray;
+}
+#navbar .settingsCog{
+    font-size: 20px; 
+    color:white; 
+    float: right;
+    padding-left: 5px; 
+    padding-right: 5px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+#navbar .settingsCog:hover{
+    background-color: #121212;
+}
+#navbar .fa-cog:hover{
+    transition: 1s;
+    rotate: 45deg;
+}
+#navbar .fa-cog{
+    transition: 0.4s;
+    rotate: -45deg;
+}
+
+.settingsDropDown{
+
+}
+
+
+#introHeaderWrapper{
+    margin-bottom: 50px;
+}
+#introHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(45, 41, 41);
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.headshotDiv{
+    width: 200px;
+    margin: 0;
+    padding-left: 5%;
+}
+.headshot{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    margin-top:20px;
+    margin-bottom: -50px;
+    
+}
+.introHeaderText{
+    flex: 1;
+    text-align: center;
+}
+.introHeaderP{
+    color:rgb(174, 168, 168);
+}
+
+
+
+
+
+
+
+
+
+#bodyContainer {
+    padding-top: 20px;
+    font-family: "Open Sans";
+    color: rgb(200, 200, 200);
+}
+
+#bodyContainer h1{
+    margin-left: 18%;
+    margin-right: 20%;
+}
+#bodyContainer h2{
+    margin-left: 23%;
+    margin-right: 22%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#bodyContainer p{
+    margin-left: 12%;
+    margin-right: 10%;
+}
+#bodyContainer ul{
+    margin-left: 12%;
+    margin-right: 10%;
+}
+.aboutMe{
+    background-color: rgb(72, 38, 38);
+    width: 85%;
+}
