@@ -1,5 +1,5 @@
 let minBars = 5;
-let maxBars = 100;
+let maxBars = 150;
 let maxRange = 1;
 let minRange = 40;
 let numOfBars = 40;
@@ -13,21 +13,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("myRange").addEventListener("input", () => {
         sleepInterval = document.getElementById("myRange").value;
+        document.getElementById("myRange");
      });
-    setBubble(document.getElementById("myRange")); // Initialize the position of the bubble
+    
 });
 
 
-
-function setBubble(slider) {
-  const val = slider.value;
-  const min = slider.min ? slider.min : 0;
-  const max = slider.max ? slider.max : 100;
-  const newVal = Number(((val - min) * 100) / (max - min));
-}
-
 function randomize(){
-    renderBars(createRandomArray());
+    if(validateDataCountInput()){
+        renderBars(createRandomArray());
+    }
 
 }
 
@@ -42,21 +37,10 @@ function createRandomArray(){
 
 function sort(){
     //checks to see if the dataCount is a valid entry
-    if(Number(document.getElementById("dataCount").value)){
-        let tempNum = Number(document.getElementById("dataCount").value);
-        if(!Number.isInteger(tempNum)){
-            errorMessage.innerHTML = "Enter integer data count";
-            return;
-        } else if(tempNum < minBars || tempNum > maxBars){
-            errorMessage.innerHTML = "Enter a value between " + minBars + " and " + maxBars;
-            return;
-        } else{
-            errorMessage.innerHTML = "";
-            numOfBars = tempNum;
-        }
-    } else{
-        errorMessage.innerHTML = "Invalid data count";
-        return;
+    validateDataCountInput();
+
+    if(barArray.length != numOfBars){
+        renderBars(createRandomArray());
     }
 
     if(document.getElementById("selectAlgorithm").value === "bubble"){
@@ -66,8 +50,6 @@ function sort(){
     } else if(document.getElementById("selectAlgorithm").value === "insertion"){
         insertionSort(barArray);
     }  else if(document.getElementById("selectAlgorithm").value === "random"){
-        errorMessage.innerHTML = document.getElementById("selectAlgorithm").options.length;
-
         const options = document.getElementById("selectAlgorithm").options;
         const randomIndex = Math.floor(Math.random() * (options.length - 1));
         if(options[randomIndex].value === "bubble"){
@@ -81,9 +63,28 @@ function sort(){
         }
         
     }
-    
 
 };
+
+function validateDataCountInput(){
+    if(Number(document.getElementById("dataCount").value)){
+        let tempNum = Number(document.getElementById("dataCount").value);
+        if(!Number.isInteger(tempNum)){
+            errorMessage.innerHTML = "Enter integer data count";
+            return false;
+        } else if(tempNum < minBars || tempNum > maxBars){
+            errorMessage.innerHTML = "Enter a value between " + minBars + " and " + maxBars;
+            return false;
+        } else{
+            errorMessage.innerHTML = "";
+            numOfBars = tempNum;
+            return true;
+        }
+    } else{
+        errorMessage.innerHTML = "Invalid data count";
+        return false;
+    }
+}
 
 function randomNum(min, max){
     return  Math.floor(Math.random() * (max - min) + min);

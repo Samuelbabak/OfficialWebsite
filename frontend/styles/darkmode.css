@@ -10,6 +10,7 @@ div{
 #navbar{
     display: flex;
     justify-content: center;
+    white-space: nowrap;
 
 }
 #navbar ul{
@@ -114,14 +115,6 @@ a{
     color:rgb(174, 168, 168);
 }
 
-
-
-
-
-
-
-
-
 #bodyContainer {
     padding-top: 20px;
     font-family: "Open Sans";
@@ -149,4 +142,51 @@ a{
 .aboutMe{
     background-color: rgb(72, 38, 38);
     width: 85%;
+}
+
+.projectDisplay{
+    background-color:#4b3d6b;
+    height: 200px;
+    width: fit-content;
+    margin-left:20%;
+    margin-top:25px;
+    position:relative;
+    margin-bottom:100px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;;
+    overflow: hidden;
+    
+}
+.projectDisplay:hover .projectPicture{
+    margin-bottom:-160px;
+    transition:0.2s;
+}
+
+.projectDisplay:hover .projectInfo{
+    opacity:100%;
+    transition: 0.5s;
+}
+
+.projectPicture{
+    height:100%;
+    margin-bottom:-50px;
+    transition:0.2s;
+}
+.projectInfo{
+    color:white;
+    background-color: gray;
+    opacity:85%;
+    position:absolute;
+    overflow: hidden;
+    width: 100%;
+    height:200px;
+    transition: 0.2s;
+}
+.projectInfo h2{
+    white-space: nowrap;
+}
+
+.clickProject {
+    width:fit-content;
 }

@@ -37,7 +37,8 @@
     </div>
     <div id="mainBody">
         <div id="Vizualizer">
-            <div style="margin-left: 5%;">
+            <div style="margin-left: 5%;display:inline-block;overflow:hidden;white-space:nowrap;">
+             <div style="display:inline-block;">
                 <button onclick="randomize()" id="randomizeButton"> Randomize </button>
                 <button onclick="sort()" id="sortButton"> Sort </button>
 
@@ -48,6 +49,8 @@
                     <option value="random">Surprise Me</option>
                 </select>
                 <input id="dataCount" value="40" placeholder="Data count" >
+             </div>
+                
                 <div class="slider-container">
                     <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
                 </div>
@@ -68,6 +71,7 @@
             <h3>What I learned</h3>
             <p>Through this project I learned a lot more about communicating with an HTML page through a JavaScript file. I also learned about how to use a DOM (Document Object Model). I also learned about how to work with these algorithms and how they work.</p>
             <h3>Code</h3>
+            <div class="projectDisplay"></div>
         </div>
         <div class="code" style="margin-left: 5%;background-color:darkGrey;height:400px;width:575px"></div>
     </div>
