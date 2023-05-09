@@ -145,7 +145,6 @@ a{
 }
 
 .projectDisplay{
-    background-color:#4b3d6b;
     height: 200px;
     width: fit-content;
     margin-left:20%;
@@ -188,5 +187,6 @@ a{
 }
 
 .clickProject {
-    width:fit-content;
+    padding:0;
+    margin:0px;
 }

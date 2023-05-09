@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     randomize();
 
     document.getElementById("myRange").addEventListener("input", () => {
-        sleepInterval = document.getElementById("myRange").value;
+        sleepInterval = 100 - document.getElementById("myRange").value;
         document.getElementById("myRange");
      });
     
