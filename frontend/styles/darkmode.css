@@ -73,10 +73,6 @@ a{
     rotate: -45deg;
 }
 
-.settingsDropDown{
-
-}
-
 
 #introHeaderWrapper{
     margin-bottom: 50px;
@@ -131,6 +127,21 @@ a{
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
+#bodyContainer h3{
+    margin-left: 15%;
+    margin-right: 22%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#bodyContainer h4{
+    font-weight: 300;
+    margin-left: 23%;
+    margin-right: 22%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
 #bodyContainer p{
     margin-left: 12%;
     margin-right: 10%;
@@ -190,3 +201,4 @@ a{
     padding:0;
     margin:0px;
 }
+
